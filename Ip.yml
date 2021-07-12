@@ -1,0 +1,8 @@
+---
+- name: Find IPv4 address
+  hosts: all
+  tasks:
+  - name: show IPv4 adress
+    debug:
+      msg: This hosts is using IP address {{ansible_facts.default_ipv4.address}}
+... 
